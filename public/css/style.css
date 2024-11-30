@@ -1,0 +1,276 @@
+:root{
+ --bgGeneral : #FFF;
+ --navbarC: #269fbd;
+ --texto: #fff;
+
+}
+
+body{
+    background-color: #111;
+    font-family: 'Roboto';
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: var(--navbarC);
+    color:var(--texto);
+    box-shadow: 2px 2px 5px hsla(0, 9%, 81%, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}  
+
+
+html{
+  width: 100%;
+}
+
+.parrafob{
+  color: #fff;
+  width: 25%;
+  padding-bottom: 50px;
+}
+
+
+
+
+nav ul {
+    list-style: none;
+    display: flex; /* Flexbox para alinear horizontalmente los <li> */
+    gap: 15px;    /* Espacio entre los <li> */
+    padding: 0;
+    margin: 0;
+}
+
+nav p{
+
+    color:var(--texto);
+    text-decoration: none;
+    padding: 5px 10px;
+  /*   font-weight: bold; */
+    font-size: 15px;
+    cursor: pointer;
+        
+}
+
+.dropdown a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+
+
+
+}
+
+.dropdown .contenido{
+    display: none;
+    background-color:var(--navbarC);
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%,0%, 0.8);
+
+
+
+}
+
+.dropdown:hover .contenido{
+    display: block;
+
+    
+
+}
+
+nav p:hover{
+    background-color: var(--texto);
+    border-radius: 4px;
+    color: var(--navbarC);
+
+}
+
+
+nav ul li {
+    display: flex; /* Alineación en el centro de cada <li> */
+    align-items: center;
+    color:var(--texto);
+}
+
+nav ul li a {
+    color: var(--bgGeneral);
+    text-decoration: none;
+    padding: 5px 10px;
+ /*    font-weight: bold; */
+    font-size: 15px;
+}
+
+
+nav ul li a:hover {
+    background-color:var(--texto);
+    border-radius: 4px;
+    color: var(--navbarC);
+
+}
+
+
+
+canvas{
+    
+    margin: 0 auto ;
+    display: block;
+    width: auto;
+   
+  }
+    
+.titulo{
+   color: #fff;
+   font-family:'Roboto';
+  
+}
+
+#intento{
+  color:#269fbd;;
+  font-weight: 800;
+  text-align: center;
+  max-width: 75%;
+}
+
+.parrafo{
+  color: #269fbd;
+  font-weight: 800;
+  text-align: center;
+  max-width: 75%;
+  font-size: 1em;
+  font-family:inherit;
+
+}
+
+a.btn{
+  color: #269fbd;
+  background-color: #269fbd;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+button {
+  background-color: #269fbd;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.inactive{
+  color: #111;
+  background-color: #111;
+
+}
+
+
+.keypad{
+  
+  display: flex;
+  flex-direction: column;  /* Organiza los contenedores uno debajo de otro */
+  align-items: center;
+  justify-content: center;
+  width: 100%; 
+ 
+      
+}
+
+footer{
+      font-size:12px;
+      color: white;
+      width: 100%;
+      text-align: center;
+      background-color:#269fbd ;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      font-family: inherit;
+      
+        
+}
+
+#contenedor,#contenedor1,#contenedor2{
+ 
+  display: flex;            /* Flexbox para alinear los botones horizontalmente */
+  justify-content: center;  /* Centra los botones horizontalmente */
+  margin-bottom: 10px;      /* Espaciado entre filas */
+  flex-wrap: wrap;          /* Permite que los botones se adapten en pantallas más pequeñas */
+  
+}
+
+
+#definicion{
+   color: #fff;
+   font-size: 1 em;
+   margin-top: 2 em;
+   margin-bottom: 2em;
+   max-width: 75%;
+   
+
+}
+
+/* Responsive adjustments for smaller screens */
+      @media (max-width: 768px) {
+          .keypad {
+              padding: 10px;
+          }
+
+          button {
+              padding: 8px 16px;
+              font-size: 14px;
+              margin: 3px;
+          }
+
+          .parrafob{
+            width: 80%;
+          }
+
+          footer{
+            position: fixed;
+          }
+
+      }
+
+      @media (max-width: 480px) {
+          button {
+              padding: 6px 12px;
+              font-size: 12px;
+              margin: 2px;
+          }
+          canvas {
+            width: 100%;
+            height: auto;
+            padding: 5%;
+          }
+       
+         
+
+
+
+      }
+
+
